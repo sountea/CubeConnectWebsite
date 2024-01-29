@@ -1,0 +1,23 @@
+.custom-list {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 20px; /* ajustez selon votre préférence */
+}
+
+.custom-list li::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 8px; /* ajustez selon votre préférence */
+  height: 8px; /* ajustez selon votre préférence */
+  background-color: #ff0000; /* couleur rouge, ajustez selon votre préférence */
+  border-radius: 50%;
+  display: block;
+  margin-right: 10px; /* espace entre le point et le texte, ajustez selon votre préférence */
+}

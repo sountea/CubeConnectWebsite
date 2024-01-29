@@ -1,0 +1,31 @@
+/* Hero.css */
+.hero-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  height: 400px; /* Ajout pour cacher le débordement des pseudo-éléments */
+  /* Ajustez la hauteur en fonction de vos besoins */
+}
+
+.hero-container::before,
+.hero-container::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.5);
+  width: 50%;
+  height: 100%;
+  border-radius: 40px;
+  z-index: -1;
+}
+
+.hero-container::before {
+  left: 0;
+}
+
+.hero-container::after {
+  right: 0;
+}
